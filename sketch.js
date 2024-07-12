@@ -44,10 +44,10 @@ function draw() {
   if (keyDown("S")) {
     dark_knight.y = dark_knight.y+5
   }*/
-  if (keyDown("space")) {
+  if (keyDown("space") && dark_knight.y>700) {
     dark_knight.velocityY=-10
   }
-  dark_knight.velocityY=dark_knight.velocitYy=+0.5
+  dark_knight.velocityY=dark_knight.velocityY+0.8
   dark_knight.collide(invisible_ground)
   drawSprites()
 
